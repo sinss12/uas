@@ -66,7 +66,7 @@ export default function GamePage() {
       });
 
       setPipes((prevPipes) => {
-        let newPipes = prevPipes.map((pipe) => {
+        const newPipes = prevPipes.map((pipe) => {
           const newX = pipe.x - 5;
           const hasPassed = !pipe.passed && newX + pipeWidth < 80;
 
